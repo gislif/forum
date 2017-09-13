@@ -11,9 +11,11 @@ Route::get('/threads/create', function () {
 });
 
 Route::get('/greeting/{id}', function ($id) {
-return view('threads.greeting', ['id' => $id]);
+	$greetings = ['Sjáumst', 'Ciao' , 'Aloha', 'Hola', 'ello bub'];
+	#return $greetings[$id];
+	return view('threads.greeting', ['viewBreyta' => $greetings[$id]]);
 });
 
-Route::get('/greeting/{id}/message/{count}', function ($id, $count) {
-return view('threads.greeting', compact('id', 'count'));
-});
+#Route::get('/greeting/{id}/message/{count}', function ($id, $count) {
+#	return view('threads.greeting', compact('id', 'count'));
+#});
