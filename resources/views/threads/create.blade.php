@@ -6,12 +6,6 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Create a New Thread</div>
-
-                <div class="panel-body">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Title:</label>
-                        <input type="title" class="form-control" id="exampleInputEmail1" placeholder="Title">
-                    </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Body:</label>
                         <div></div>
