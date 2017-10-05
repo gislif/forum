@@ -5,14 +5,23 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Create a New Thread</div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Body:</label>
-                        <div></div>
-                        <textarea rows="6" cols="100"></textarea>
-                        <div></div>
-                        <button type="submit" class="btn btn-primary">Publish</button>
-                    </div>
+                <div class="panel-heading">Forum Threads</div>
+
+                <div class="panel-body">
+                    <form method="POST" action="/threads">
+                        {{ csrf_field() }}
+                        <div class="form-group">
+                            <label>Title: </label>
+                            <input type="text" name="title" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Body: </label>
+                            <textarea type="text" name="body" class="form-control" rows="8"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary">Publish</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
