@@ -11,7 +11,7 @@
                     <form method="POST" action="/threads">
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <label>Title: </label>
+                                <label>Title: </label>
                             <input type="text" name="title" class="form-control">
                         </div>
                         <div class="form-group">

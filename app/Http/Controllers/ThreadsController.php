@@ -10,7 +10,7 @@ class ThreadsController extends Controller
 {
     public function index()
     {
-        $threads = Thread::all();
+        $threads = Thread::latest()->get();
 
     	return view('threads.index', compact('threads'));
     }
@@ -21,7 +21,6 @@ class ThreadsController extends Controller
     public function show($id)
     {
         $thread = Thread::find($id);
-
 
     	return view('threads.show', compact('thread'));
     }
